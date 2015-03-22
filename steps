@@ -35,3 +35,9 @@ git commit -m 'git alias gl added'
 
 git checkout master
 git merge alternative
+
+git clone git@github.com:dromie/Tutorial.git
+git commit -a -m 'git clone step added'
+git tag "v1.0"
+git push --all origin 
+
