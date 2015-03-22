@@ -1,0 +1,17 @@
+git init
+git config --global user.email nandor.galambosi@nokia.com
+git config --global user.name Nandor Galambosi 
+echo "Hello World!" >helloworld
+git status
+git add helloworld
+git status
+
+git commit -m 'Hello World'
+git status
+
+cat .git/objects/98/0a0d5f19a64b4b30a87d4206aade58726b60e3 |zlib-flate -uncompress
+(echo -ne "blob 13\0";cat helloworld)|shasum
+git cat-file -p 980a0d5f19a64b4b30a87d4206aade58726b60e3
+
+git add steps
+git commit -m 'First steps added'
