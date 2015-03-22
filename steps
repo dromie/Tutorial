@@ -21,3 +21,5 @@ git show HEAD
 git ls-tree HEAD
 git commit -a -m 'Query commit info'
 
+git checkout master
+git merge alternative
