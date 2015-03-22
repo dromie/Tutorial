@@ -16,6 +16,11 @@ git cat-file -p 980a0d5f19a64b4b30a87d4206aade58726b60e3
 git add steps
 git commit -m 'First steps added'
 
+git log
+git show HEAD
+git ls-tree HEAD
+git commit -a -m 'Query commit info'
+
 git checkout -b alternative master^
 
 git cat-file -p HEAD
@@ -27,5 +32,39 @@ git gl
 
 git add steps
 git commit -m 'git alias gl added'
+
+git checkout master
+git merge alternative
+
+git remote add git@github.com:dromie/Tutorial.git
+git push origin master
+
+git clone git@github.com:dromie/Tutorial.git
+git commit -a -m 'git clone step added'
+git tag "v1.0"
+git push --all origin 
+
+git fetch
+git merge origin/master
+git add steps
+git commit -m 'Merge completed'
+git add steps
+git commit -m 'pushing alternative branch'
+git push --all origin 
+
+git fetch
+#Fast forward
+git merge origin/master
+
+git add steps
+git commit -m "Fast-forward example, and pushing all tags" 
+git push --tags origin
+
+git commit -a -m "Pushing new commit and tags"
+git tag "v2.0"
+#git push --all origin
+git commit -a -m "Pushing new commit and tags now for real"
+git tag "v3.0"
+git push --all --follow-tags origin
 
 git checkout alternative
