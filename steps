@@ -39,3 +39,13 @@ git merge alternative
 git remote add git@github.com:dromie/Tutorial.git
 git push origin master
 
+git clone git@github.com:dromie/Tutorial.git
+git commit -a -m 'git clone step added'
+git tag "v1.0"
+git push --all origin 
+
+git fetch
+git merge origin/master
+git add steps
+git commit -m 'Merge completed'
+
