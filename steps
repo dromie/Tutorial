@@ -52,3 +52,11 @@ git add steps
 git commit -m 'pushing alternative branch'
 git push --all origin 
 
+git fetch
+#Fast forward
+git merge origin/master
+
+git add steps
+git commit -m "Fast-forward example, and pushing all tags" 
+git push --tags origin
+
