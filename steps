@@ -15,3 +15,9 @@ git cat-file -p 980a0d5f19a64b4b30a87d4206aade58726b60e3
 
 git add steps
 git commit -m 'First steps added'
+
+git log
+git show HEAD
+git ls-tree HEAD
+git commit -a -m 'Query commit info'
+
