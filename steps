@@ -62,4 +62,7 @@ git push --tags origin
 
 git commit -a -m "Pushing new commit and tags"
 git tag "v2.0"
-git push --all origin
+#git push --all origin
+git commit -a -m "Pushing new commit and tags now for real"
+git tag "v3.0"
+git push --all --follow-tags origin
