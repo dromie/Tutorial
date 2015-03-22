@@ -48,4 +48,7 @@ git fetch
 git merge origin/master
 git add steps
 git commit -m 'Merge completed'
+git add steps
+git commit -m 'pushing alternative branch'
+git push --all origin 
 
