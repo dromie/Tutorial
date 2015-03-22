@@ -60,3 +60,6 @@ git add steps
 git commit -m "Fast-forward example, and pushing all tags" 
 git push --tags origin
 
+git commit -a -m "Pushing new commit and tags"
+git tag "v2.0"
+git push --all origin
