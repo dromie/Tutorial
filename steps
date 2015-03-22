@@ -35,3 +35,7 @@ git commit -m 'git alias gl added'
 
 git checkout master
 git merge alternative
+
+git remote add git@github.com:dromie/Tutorial.git
+git push origin master
+
