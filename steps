@@ -28,3 +28,4 @@ git gl
 git add steps
 git commit -m 'git alias gl added'
 
+git checkout alternative
