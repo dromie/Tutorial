@@ -21,5 +21,17 @@ git show HEAD
 git ls-tree HEAD
 git commit -a -m 'Query commit info'
 
+git checkout -b alternative master^
+
+git cat-file -p HEAD
+git cat-file -p HEAD^{tree}
+git commit -a -m 'Query commit info advanced'
+
+git config --global alias.gl 'log --oneline --decorate --all --graph'
+git gl
+
+git add steps
+git commit -m 'git alias gl added'
+
 git checkout master
 git merge alternative
